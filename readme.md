@@ -4,20 +4,20 @@
 
 ### Init submodule
 
-``bash
+``javascript
 git submodule init
 git submodule update
 ``
 ### Create containers
 
-``bash
+``javascript
 cd laradock
 docker-compose up -d nginx mysql phpmysql redis
 ``
 
 ### Run commands inside workspace container
 
-``bash
+``javascript
 docker exec -it laradock_workspace_1 bash
 composer install
 php artisan key:generate
